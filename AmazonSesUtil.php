@@ -24,6 +24,10 @@ use Aws\Ses\SesClient;
  * @param string $replyTo (Default = null) Reply to email address
  * @return Aws\Result Amazon SES repsponse object
  * @author Carlos Sifuentes
+ * @see http://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-raw.html
+ * @see http://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html
+ * @see http://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#___construct
+ * @see http://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendrawemail
  */
 function sendHtmlMail($from, $to, $subject, $htmlBody, $files, $amazonSesConfig, $replyTo = null)
 {
